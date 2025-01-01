@@ -22,7 +22,7 @@ pipeline {
 	              {
 	              sh 'mvn sonar:sonar'
 	               }
-               echo "Sonar Scan"
+               echo "Sonar Scan" 
             }
         }
 
