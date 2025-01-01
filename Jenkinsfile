@@ -36,7 +36,7 @@ pipeline {
          stage('Deploy Artifacts') {
             steps {
             
-	       nexusArtifactUploader artifacts: [[artifactId: 'ether', classifier: '', file: 'target/ether-0.0.1-SNAPSHOT.jar', type: 'jar']], credentialsId: 'nexus-cred', groupId: 'com.segman.tech', nexusUrl: '51.20.74.27:8081', nexusVersion: 'nexus3', protocol: 'http', repository: 'ether-snapshot-repo', version: '0.0.1-SNAPSHOT'    
+	       nexusArtifactUploader artifacts: [[artifactId: 'ether', classifier: '', file: 'target/ether-0.0.1-RELEASE.jar', type: 'jar']], credentialsId: 'nexus-cred', groupId: 'com.segman.tech', nexusUrl: '51.20.74.27:8081', nexusVersion: 'nexus3', protocol: 'http', repository: 'ether-snapshot-repo', version: '0.0.1-SNAPSHOT'    
                
                echo "Deploy Artifacts"
             }
