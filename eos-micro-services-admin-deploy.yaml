@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: eos-micro-services-admin
+  namespace: uat
   labels:
     app: eos-micro-services-admin
 spec:

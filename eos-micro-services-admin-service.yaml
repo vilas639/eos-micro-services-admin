@@ -3,6 +3,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: eos-micro-services-admin-service
+  namespace: uat
   labels:
     app: eos-micro-services-admin
 
