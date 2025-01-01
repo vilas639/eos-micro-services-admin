@@ -51,7 +51,7 @@ pipeline {
         
         stage('Docker Image') {
             steps {
-               sh 'docker build -t vilasjdhv639/eos-jenkins-agent-base:latest .'
+               sh 'docker build -t vilasjdhv639/eos-micro-services-admin:latest .'
                echo "build docker images"
               
               
@@ -63,7 +63,7 @@ pipeline {
 
       
           sh "docker login -u vilasjdhv639 -p Vilas@123"
-          sh "docker push vilasjdhv639/eos-jenkins-agent-base:latest"
+          sh "docker push vilasjdhv639/eos-micro-services-admin:latest"
        
           echo "Docker Push"  
 
